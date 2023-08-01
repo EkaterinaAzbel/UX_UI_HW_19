@@ -1,0 +1,157 @@
+body  body, h1, h2, h3, p, ul, li{
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100px;
+  height: auto;
+}
+header {
+  background-color: white;
+  padding: 15px;
+}
+header ul {
+  float: right;
+  color: white;
+}
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+  color: white;
+}
+header p {
+  display: inline-block;
+}
+.heroImg {
+  background-color: lightgoldenrodyellow;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: lightgoldenrodyellow;
+  text-align: center;
+}
+button {
+  padding: 15px;
+  background-color: white;
+  color: rgb(6, 6, 6);
+  font-size: 15px;
+  border-radius: 4px;
+}
+footer {
+  background-color: white;
+  padding: 5px;
+  color: #040303;
+}
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+}
+.heading {
+  text-align: center;
+  padding: 15px 5px;
+  font-size: 30px;
+}
+/* My UX Skills Section */
+.flexContainer {
+  display: flex;
+  padding: 60px 30px;
+  background-color: lightgoldenrodyellow;
+}
+.flexContainer div {
+  width: 30%;
+  padding: 25px;
+  background-color: lightgoldenrodyellow;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flexContainer img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+/* My Work Section */
+.MyProject {
+  text-align: center;
+  padding: 60px 30px;
+  background-color: lightgoldenrodyellow;
+}
+
+.workGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  justify-items: center;
+  align-items: center;
+}
+
+.workItem {
+  max-width: 400px;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.workItem img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.workItem h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.workItem p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.workItem button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.viewAllProjects {
+  margin-top: 40px;
+}
+
+.viewAllProjects a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.viewAllProjects a:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .workGrid {
+    grid-template-columns: 1fr;
+  }
+}
