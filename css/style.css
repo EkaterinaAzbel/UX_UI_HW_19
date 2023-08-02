@@ -1,155 +1,223 @@
-body  body, h1, h2, h3, p, ul, li{
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
   margin: 0;
   padding: 0;
 }
-img {
-  width: 100px;
-  height: auto;
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
 }
+
 header {
-  background-color: white;
-  padding: 15px;
+  background-color: #333;
+  padding: 10px;
 }
+
+header img {
+  height: 40px;
+  margin-right: 20px;
+}
+
 header ul {
-  float: right;
-  color: white;
+  list-style: none;
 }
+
 header li {
   display: inline-block;
-  padding: 0px 5px;
-  color: white;
+  margin-right: 20px;
 }
-header p {
-  display: inline-block;
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
 }
+
 .heroImg {
-  background-color: lightgoldenrodyellow;
-  padding: 10px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.content {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 50px;
-  background-color: lightgoldenrodyellow;
+  background-color: #f5f5f5;
+  padding: 50px 0;
   text-align: center;
 }
-button {
-  padding: 15px;
-  background-color: white;
-  color: rgb(6, 6, 6);
-  font-size: 15px;
-  border-radius: 4px;
+
+.heroImg img {
+  border-radius: 50%;
+  max-width: 200px;
+  margin-bottom: 20px;
 }
-footer {
-  background-color: white;
-  padding: 5px;
-  color: #040303;
+
+.heroImg h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
 }
-footer ul {
-  list-style: none;
-  padding-left: 5px;
+
+.heroImg p {
+  max-width: 600px;
+  margin: 0 auto 20px;
 }
-footer li {
-  display: inline-block;
-  padding: 0px 7px;
+
+.heroImg button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
+
 .heading {
   text-align: center;
-  padding: 15px 5px;
-  font-size: 30px;
+  margin-top: 50px;
 }
-/* My UX Skills Section */
+
 .flexContainer {
   display: flex;
-  padding: 60px 30px;
-  background-color: lightgoldenrodyellow;
+  justify-content: space-around;
+  margin-top: 30px;
 }
+
 .flexContainer div {
-  width: 30%;
-  padding: 25px;
-  background-color: lightgoldenrodyellow;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .flexContainer img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
   margin-bottom: 20px;
 }
-/* My Work Section */
+
 .MyProject {
+  background-color: #f5f5f5;
+  padding: 50px 0;
   text-align: center;
-  padding: 60px 30px;
-  background-color: lightgoldenrodyellow;
 }
 
 .workGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
-  justify-items: center;
-  align-items: center;
-}
-
-.workItem {
-  max-width: 400px;
-  padding: 30px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .workItem img {
-  width: 100%;
-  max-width: 200px;
+  width: 50%;
   height: auto;
-  margin-bottom: 20px;
+  border-radius: 8px;
 }
 
 .workItem h4 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .workItem p {
-  font-size: 16px;
   margin-bottom: 20px;
 }
 
 .workItem button {
-  padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #333;
   color: #fff;
-  font-size: 16px;
   border: none;
-  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
   cursor: pointer;
 }
 
-.viewAllProjects {
-  margin-top: 40px;
-}
-
-.viewAllProjects a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
+footer {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
   color: #fff;
-  font-size: 16px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer a {
+  color: #fff;
   text-decoration: none;
-  border-radius: 4px;
 }
 
-.viewAllProjects a:hover {
-  background-color: #0056b3;
+footer select {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+:root {
+  --primary-color: #2ecc71; 
 }
 
-/* Responsive styles */
+header {
+  background-color: var(--primary-color);
+  padding: 10px;
+}
+header a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+header a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.heroImg button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.flexContainer img {
+  width: 80px;
+  height: 80px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+}
+.workItem button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer select {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+}
 @media (max-width: 768px) {
   .workGrid {
     grid-template-columns: 1fr;
